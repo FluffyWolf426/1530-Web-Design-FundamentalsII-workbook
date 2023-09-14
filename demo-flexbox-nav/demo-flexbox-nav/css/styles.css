@@ -1,0 +1,25 @@
+/* utility classes */
+
+.flex-container {
+    display: flex;
+    /* 4 default states of Flex are:
+    - row
+    nowrap
+    -flex-wrap (starts on the left)
+    - stretch (vertical) */
+   justify-content: space-between; /*
+   horizontal/main-axix (x)*/
+   align-items: center;
+}
+
+/* navigation styles */
+
+header {
+    background: #fafafa;
+;
+
+}
+
+header nav img {
+    width: 100px;
+}
