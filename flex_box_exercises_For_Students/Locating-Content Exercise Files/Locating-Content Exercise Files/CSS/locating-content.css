@@ -1,0 +1,151 @@
+html {
+    font-size: 62.5%;
+    /* 62.5% of 16 = 10 */
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 16px;
+    font-size: 1.6rem;
+    /* = 16px */
+    font-family: "Arial", "Helvetica", sans-serif;
+    color: #00264d;
+    width: 80%;
+    margin: 0 auto;
+}
+
+header,
+main,
+footer {
+    width: 100%;
+}
+
+/*  Typograhical Scales  */
+h1,
+h2,
+h3 {
+    font-family: 'Libre Baskerville', serif;
+    text-align: center;
+}
+
+h2,
+h3 {
+    margin: 2.4rem 0;
+}
+
+h1 {
+    font-size: 6.554rem;
+}
+
+h2 {
+    font-size: 4.096rem;
+}
+
+h3 {
+    font-size: 2.56rem;
+}
+
+p {
+    font-weight: 700;
+    height: 10rem;
+    padding: 2%;
+    display: flex;
+}
+
+/* --- Remember to add Display: flex; to the p tag and not to each of the classes! --- */
+
+/*Note: The code [attribute^="value"] is the Attribute/value selector. it is
+ used to select elements whose attribute value pairs begins with a specified
+ value.  If you plan your class naming you can target groups of classes  */
+[class ^="top"] {
+    background-color: #cce6ff;
+}
+
+[class ^="middle"] {
+    background-color: #b3d9ff;
+}
+
+[class ^=bottom] {
+    background-color: #99ccff;
+}
+
+/*  --- Edit this section of code only !!!!!
+Add the flexbox properties to the classes bellow to position these <p> tags
+as shown in the wireframe ---  */
+.top-left {
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.top-center {
+
+}
+
+.top-right {
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.middle-left {}
+
+.middle-center {}
+
+.middle-right {}
+
+.bottom-left {}
+
+.bottom-center {}
+
+.bottom-right {}
+
+/* Grids three column */
+[class*='col-'] {
+    float: left;
+    display: block;
+    margin: 0 4.255% 4.255% 0;
+}
+
+.col-3-3 {
+    width: 100%;
+}
+
+.col-2-3 {
+    width: 65.2482%;
+    border: 1px solid #000;
+}
+
+.col-1-3 {
+    width: 30.4964%;
+    border: 1px solid #000;
+}
+
+.gridfix {
+    margin-right: 0;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* Navigational Behaviours */
+a {
+    text-decoration: none;
+}
+
+a:link,
+a:visited {
+    color: #999999;
+}
+
+a:hover,
+a:active {
+    color: #000000;
+}

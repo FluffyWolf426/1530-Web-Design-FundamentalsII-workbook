@@ -1,0 +1,53 @@
+body {
+	width: 68%;
+	margin: 0 auto;
+	font-family: arial;
+	background-color: #f8f2f2;
+}
+
+header,
+footer {
+	padding: 2.5rem;
+	text-align: center;
+}
+
+header p {
+	background-color: #ccccff;
+	border: 2px solid #666;
+	/* margin: 1.25rem; */
+	font-size: 1rem;;
+	font-weight:500;
+    
+	padding: 2rem;
+}
+
+div {
+
+}
+
+footer span {
+	font-weight: 900;
+}
+
+h1 {
+	font-size: 3rem; /** 48px / 16px = 3rem*/
+	font-weight: 400;
+	padding-bottom: 1rem; /*16px*/
+	text-align: center;
+	color: blue;
+}
+
+div {
+	display: flex;
+	flex-direction:column;
+}
+
+/* section {
+	display: flex;
+	
+} */
+
+.one {
+	color: red;
+	width: calc(100% /3 - 2rem);
+}

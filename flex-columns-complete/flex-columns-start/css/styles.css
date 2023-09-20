@@ -1,0 +1,67 @@
+body {
+	background-color: #434a54;
+	color: white;
+	font-family: 'Noto Sans JP', sans-serif;
+}
+
+/** typography **/
+h1 {
+	font-size: 3rem; /** 48px / 16px = 3rem*/
+	font-weight: 400;
+	padding-bottom: 1rem; /*16px*/
+	text-align: center;
+}
+
+p {
+	font-size: 1rem;
+	font-weight: 300;
+	margin-bottom: 2rem; /**32px**/
+	padding: 1rem;
+}
+
+section {
+	max-width: 67.5rem; /**1080px**/
+	margin: 0 auto;
+	padding: 2rem; 
+}
+
+/** 
+	Because each paragraph has a slightly different amount of text, each flex-item is unequally sized by default. 
+
+	The calc() function allows us to to not only mix and match our units of measurement, but it will also recalutate things as we resize the viewport, keeping our containers fluid/flexible 
+**/
+
+
+.flex-row:nth-child(2) p {
+	background-color: #d93041;
+	width: calc(100% / 3 - 1rem);
+}
+
+.flex-row:nth-child(3) p {
+	background-color: #f6bb42;
+	width: calc(100% / 2 - 1rem);
+}
+
+.flex-row:nth-child(4) p,
+.flex-row:last-child {
+	background-color: #2e79db;
+}
+
+.flex-row:first-child {
+	justify-content: center;
+}
+
+.flex-row {
+	display: flex;
+	justify-content: space-between;
+	/* flex-flow: nowrap column-reverse; */
+
+}
+section {
+	display: flex;
+	flex-direction: column;
+	/* flex-flow: nowrap column; */
+}
+
+
+

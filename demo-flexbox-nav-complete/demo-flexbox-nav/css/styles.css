@@ -1,0 +1,50 @@
+/** utility classes **/
+.flex-container {
+    display: flex;
+    /** 4 defaults states of flex are: 
+    - row
+    - nowrap
+    - flex-start (starts on the left)
+    - stretch (vertical)
+    **/
+    justify-content: space-between; /** horizontal/main-axix (x)*/
+    align-items: center; /*vertical /cross-axis (y) */
+}
+
+/** navigation styles **/
+header {
+    background: #fafafa;
+    border-bottom: 1px solid #dcdcdc;
+    box-shadow: 0 0 8px 0 #dcdcdc; /** x, y, blur, spread, colour */
+    padding: 8px 16px;
+    min-width: 960px; /** start at 960 and applies to larger screens. Anything below 960 will cause an overflow scroll**/ 
+}
+
+header nav img {
+    width: 100px;
+}
+
+li {
+    margin: 0 12px;
+}
+/** default state **/
+.nav-buttons a {
+    background: #fff;
+    border: 1px solid #d2d2d2;
+    border-radius: 4px;
+    color: grey;
+    padding: 4px 16px;
+    text-align: center;
+    /**this prevents the user from accidently highlighting the text instead of just clicking the button
+    or in terms of content - copying your work.
+    */
+    user-select: none;
+    transition: 0.4s ease;
+}
+
+/** hover state **/
+.nav-buttons a:hover {
+    background: #4172ee;
+    box-shadow: 0 0 5px 2px #4172ee;
+    color: white;
+}
