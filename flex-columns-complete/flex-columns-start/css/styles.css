@@ -40,6 +40,7 @@ section {
 .flex-row:nth-child(3) p {
 	background-color: #f6bb42;
 	width: calc(100% / 2 - 1rem);
+	height: 5rem;
 }
 
 .flex-row:nth-child(4) p,
