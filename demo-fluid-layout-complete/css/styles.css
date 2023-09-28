@@ -86,7 +86,7 @@ header section {
 
 header section div.flex {
     align-items: center;
-    flex-flow: column wrap;
+    flex-direction: column;
     height: calc(100vh - 5rem);
     justify-content: center;
 }
@@ -143,12 +143,13 @@ main section:last-child .flex {
 
 main section:last-child img {
     max-width: 50%;
-    padding-right: 2rem;
+    margin-right: 2rem;
 }
 
 main section:last-child h3 {
     padding: 2rem 0 1rem 0;
 }
+
 
 /* Footer */
 
