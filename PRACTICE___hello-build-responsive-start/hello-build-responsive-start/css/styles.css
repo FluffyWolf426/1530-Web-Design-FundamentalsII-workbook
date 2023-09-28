@@ -10,6 +10,7 @@ body {
 /* Typographic Styles */
 
 h1 {
+    font-size: 9rem;
     font-weight: bold;
     color: #63b3ed;
 }
@@ -46,6 +47,15 @@ header p a:hover {
 main section ul {
     line-height: 2;
 }
+main{
+    display: flex;
+    
+}
+.container {
+    max-width: 80rem;
+    margin: 0 auto;
+}
+
 
 /* Media Query – Switch to Flexed Sections */
 @media screen and (min-width: 45rem) {
