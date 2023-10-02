@@ -1,0 +1,43 @@
+:root {
+    --dk-blue: rgb(19,24,98); /** #131862*/
+    --md-blue: rgb(46,68,130); /** #2e4482 */
+    --lt-blue: rgb(84,107,171); /** #546bab */
+    --lt-purple: rgb(190,169,222); /**bea9de */
+    --grey: rgb(135, 136,156); /** #87889c */
+    --lt-grey: rgb(231,231,231); /* #e7e7e7*/
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1.5;
+    font-size: 100%;
+}
+
+/** global **/
+h2 {
+    font-size: 2.75rem; /**40px**/
+    text-transform: uppercase;
+    letter-spacing: 0.0625rem; /**1rem**/
+    color: var(--dk-blue);
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+}
+
+h3 {
+    font-size: 1.3125rem; /**21px**/
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+}
+
+
+/***** structural - but global ************/
+
