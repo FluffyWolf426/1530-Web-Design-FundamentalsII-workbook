@@ -41,3 +41,51 @@ a {
 
 /***** structural - but global ************/
 
+.inner-container {
+    padding: 1rem;
+    max-width: 100rem; /**1600px**/
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/**header**/
+
+header {
+    background: var(--lt-purple);
+}
+
+header .flex {
+    flex-flow: column;
+}
+
+header a {
+    color: var(--dk-blue);
+    
+}
+
+header img{
+    width: 2rem;
+    margin-right: 1rem;
+}
+
+header h1{
+    font-size: 1.125rem;
+}
+
+/**Navigation**/
+/** put spacing on li's **/
+header nav li {
+
+}
+
+/* put any styling a tag */
+
+header nav li a{
+ text-transform: uppercase;
+ padding:0.5rem;
+}
