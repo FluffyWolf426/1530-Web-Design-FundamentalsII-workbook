@@ -23,13 +23,90 @@ header {
 }
 
 /* make all images flexible - ie. they cannot be larger than the container that they are in */
-div {
-    background: url(..img/bg) center bottom / cover no-repeat;
+.banner {
+    background: url(../img/bg-small.jpg) center center / cover no-repeat;
     display: flex;
-    align-items: center;
+    flex-flow: column;
     justify-content: center;
-    height: 10rem;
+    height: 8rem;
+    color: #fff;
 }
+
+h1{
+  padding: 1rem;
+}
+
+h2{
+    color: #fff;
+}
+
+
+
+.card  img{
+    width: 100%;
+}
+/* img{
+    width: 100%;
+} */
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.card{
+    display: flex;
+    flex-flow: column;
+    margin-top: 1rem;
+}
+
+
+
+@media screen and (min-width: 730px) {
+
+    .card{
+        width: calc(100% / 2 - 1.5rem);
+        
+    }
+
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        flex-direction: unset;
+    }
+    .banner{
+        background: url(../img/bg-med.jpg) center center / cover no-repeat;
+    }
+    section .banner{
+        width: 100%;
+    }
+
+    
+}
+
+@media screen and (min-width: 960px) {
+
+    .card{
+        width: calc(100% / 4 - 1.5rem);
+        
+    }
+
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        flex-direction: unset;
+    }
+    .banner{
+        background: url(../img/bg-large.jpg) center center / cover no-repeat;
+    }
+    section .banner{
+        width: 100%;
+    }
+
+    
+}
+
 
 /**** add a responsive 100% width background image to the banner area*/
 
