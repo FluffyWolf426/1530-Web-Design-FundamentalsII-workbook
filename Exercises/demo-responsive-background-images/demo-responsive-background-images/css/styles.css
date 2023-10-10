@@ -24,7 +24,7 @@ header {
 
 /* make all images flexible - ie. they cannot be larger than the container that they are in */
 div {
-    background: url(..img/bg-small.jpg) center bottom / cover no-repeat;
+    background: url(..img/bg) center bottom / cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
