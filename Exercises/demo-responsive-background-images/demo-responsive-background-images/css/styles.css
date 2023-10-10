@@ -1,0 +1,45 @@
+body {
+    font-family: sans-serif;
+}
+
+
+/* ***************** typography *************** */
+h1 {
+    font-size: 1.4rem;
+}
+
+h2,
+h3 {
+    color: #303239;
+    font-size: 1.2rem;
+    font-family: serif;
+}
+
+/* ******************** header ******************* */
+header {
+    background-color: #303239;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+/* make all images flexible - ie. they cannot be larger than the container that they are in */
+
+/**** add a responsive 100% width background image to the banner area*/
+
+/* ********************* layout ********************** */
+/* add spacing around all the content, but don't limit it to a fixed width so it can grow as the screen grows */
+
+
+/* create first breakpoint for when the layout changes to 2 columns */
+
+/** when the quality of the smaller image doesn't look good, swap it out for a higher quality image **/
+
+
+/* create the next breakpoint to change to fours columns across */
+
+
+
+
+
+
+
