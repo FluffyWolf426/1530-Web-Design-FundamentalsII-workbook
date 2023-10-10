@@ -7,12 +7,12 @@ if the image is 4460px by 2973px and 950kb. Either going to use Photoshop or Squ
 header {
     /** source, position (x,y), / background-size, repetition **/
     background: url(../img/header-plant-bkgd-sm.webp) center bottom / cover no-repeat;
-    /** longhand 
+    /* * longhand 
         background-image: url(../img/header-plant-bkgd-sm.webp);
         background-position: center bottom;
         background-size: cover;
         background-repeat: no-repeat;
-    **/
+    * */
    
     display: flex;
     align-items: center;
