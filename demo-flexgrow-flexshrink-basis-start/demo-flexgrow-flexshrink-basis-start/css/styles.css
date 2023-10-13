@@ -2,12 +2,21 @@
 
 Red    #e24c3b
 White  #fbf3ef
-Blue   #0088e0
+Blue   #0088e0 */
 
-*/
+ :root{
+  --red: red;
+  --white:  #fbf3ef;
+--blue:   #0088e0;
+} 
 
 body {
   font-family: 'Oswald', sans-serif;
+}
+
+h1{
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 h2 {
@@ -21,3 +30,105 @@ p {
 }
 
 /* Mobile Layout */
+
+nav{
+  background-color: var(--white);
+}
+
+nav ul{ 
+display: flex;
+flex-flow: column;
+list-style: none;
+}
+
+nav li {
+  line-height: 3rem;
+}
+
+nav li a {
+  color: #222;
+  text-decoration: none;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  font-size: 1.3125rem; /* 21px */
+  display: block;
+  text-align: center;
+}
+
+/* color the background links */
+
+nav ul li:nth-child(3),
+nav ul li:nth-child(5){
+  background-color: var(--red);
+}
+
+nav ul li:nth-child(2){
+  background-color: var(--blue);
+}
+
+
+/* only target the inline svg (in the header) */
+
+svg{
+  width: 5rem;
+  margin-top: 1rem;
+}
+
+svg path{
+  fill: #222;
+}
+
+/* rearrange our nav items by using flex order */
+nav ul li:nth-child(3){
+  order: -1;
+}
+
+@media screen and (min-width: 700px){
+  /* Starting from top to bottom (top-down structrure) 
+  1. you header needs to become horizontal.
+  On your own (homework)
+  2. background image on the body needs to be swapped to a larger size 
+  3. Your seciton will be placed in clumns of two*/
+
+  nav{
+    background-color: rgba(0,0,0,0.6);
+  }
+
+  /* change the orientation fo the menu using flex */
+  nav ul {
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  /* update the background colours on our li items */
+  nav ul li:nth-child(2),
+  nav ul li:nth-child(3),
+  nav ul li:nth-child(5){
+    background-color: transparent;
+  }
+  /* change the links colours */
+  nav  li a{
+    color: var(---white);
+  }
+
+  /* svg styling  */
+  svg{margin: 0;}
+  svg path {fill: var(--white);}
+
+  /* to put the logo back into the third position, we are just going to put it  back to its default ordered state*/
+  nav ul li:nth-child(3){
+    order: 0;
+    margin-top: 1rem;
+    flex: 1 0 50%;
+  }
+/* apply flex grow , flex-shrink and flex- */
+  nav ul li{
+    /* Longhand */
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 25%;
+    /* shorthand */  
+    flex: 1 1 25%; 
+  }
+}
