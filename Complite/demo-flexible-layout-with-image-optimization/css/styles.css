@@ -1,0 +1,185 @@
+:root {
+    --dk-blue: rgb(19,24,98); /** #131862*/
+    --md-blue: rgb(46,68,130); /** #2e4482 */
+    --lt-blue: rgb(84,107,171); /** #546bab */
+    --lt-purple: rgb(190,169,222); /**bea9de */
+    --grey: rgb(135, 136,156); /** #87889c */
+    --lt-grey: rgb(231,231,231); /* #e7e7e7*/
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1.5;
+    font-size: 100%;
+}
+
+/** global **/
+h2 {
+    font-size: 2.75rem; /**40px**/
+    text-transform: uppercase;
+    letter-spacing: 0.0625rem; /**1rem**/
+    color: var(--dk-blue);
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+}
+
+h3 {
+    font-size: 1.3125rem; /**21px**/
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/***** structural - but global ************/
+.inner-container {
+    padding: 1rem;
+    max-width: 100rem; /**1600px**/
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/** header **/
+header {
+    background: var(--lt-purple);
+
+}
+
+header .flex {
+    flex-flow: column;
+}
+
+header a {
+    color: var(--dk-blue);
+}
+
+header img { 
+    width: 2rem; 
+    margin-right: 1rem;
+}
+
+header h1 {
+    font-size: 1.125rem;
+}
+
+/** navigation **/
+header nav {
+    width: 100%;
+    margin-top: 1.5rem;
+}
+
+/** put spacing on li's **/
+header nav li {
+
+}
+/** put any styling a tag **/
+header nav li a {
+    text-transform: uppercase;
+    padding: 0.5rem;
+}
+
+/** banner **/
+.home section:first-child {
+    background: url(../img/sketching-wireframes-sm.webp) center / cover no-repeat;
+    /* padding: 4rem 0; */
+}
+
+.home .banner-blurb {
+    background-color: rgba(255,255,255, 0.5);
+    padding: 2rem;
+    text-align: right;
+    margin: 4rem 0;
+}
+
+.home .banner-blurb a {
+    padding: 1rem 2rem;
+    background-color: var(--lt-purple);
+    border-radius: 3px;
+    color: var(--dk-blue);
+    margin-top: 3rem;
+    font-weight: bold;
+}
+
+/** card layout - flexible cards **/
+.card {
+    width: 100%;
+    border: 1px solid var(--lt-grey);
+    margin-top: 1.5rem;
+}
+
+.card img {
+    /* width: unset; */
+    width: 100%;;
+    margin-bottom: 1rem;
+}
+.card h3 { padding: 0 0.5rem 0.5rem 0.5rem; }
+.card-body {
+    padding: 1rem 0.5rem;
+}
+
+.card-footer {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-footer > ul {
+    display: flex;
+}
+.card-footer > ul li { margin-right: 0.5rem; }
+
+
+
+
+@media screen and (min-width: 760px) {
+    /** header **/
+    header .flex {
+        flex-flow: row;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    header nav { margin-top: 0; }
+
+    /** banner **/
+    .home .banner-blurb {
+        width: 50%;
+        margin-left: auto;
+    }
+
+    /** card **/
+    /** put cards 2 up **/
+    .workshops.flex-container {
+        display: flex;
+        flex-wrap: wrap;
+        /* justify-content: space-between; */
+    }
+    .card {
+        width: 48%;
+    }
+
+}
+
+@media screen and (min-width:1280px) {
+    .card {
+        width: 24%;
+    }
+}
