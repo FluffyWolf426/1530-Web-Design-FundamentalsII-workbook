@@ -36,10 +36,7 @@ We can use media queries to swap out our background images to load nice quality 
         background: url(../img/header-plant-bkgd-md.webp) center bottom / cover no-repeat;
     }
 
-    h1 {
-        /** automatically increasing the font-size **/
-        font-size: calc(2.5rem + 2vw);
-    }
+  
 }
 
 @media screen and (min-width: 1000px) {
