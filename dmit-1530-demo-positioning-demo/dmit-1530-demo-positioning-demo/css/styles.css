@@ -12,3 +12,31 @@ base-font-family: Verdana, Geneva, Tahoma, sans-serif;
 headings: 'Signika', sans-serif;
 **/
 
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #333;
+}
+
+/* Utility classes */
+
+.inner-container {
+    margin: 0 auto;
+    max-width: 80rem;
+}
+
+/* header */
+
+header {
+    background: #3DB39E;
+    color: white;
+    font-family: 'Signika', sans-serif;
+    padding: 1rem;
+    /* vendor prefixes help make experimental properties and features compatible with browser where support may be iffy */
+    position: -webkit-sticky;
+    position: sticky;
+
+    /* without a helper property, the sticky position won't work */
+
+    top: 0;
+    z-index: 1;
+}
