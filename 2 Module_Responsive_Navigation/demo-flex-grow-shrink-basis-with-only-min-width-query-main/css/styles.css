@@ -230,6 +230,36 @@ margin: top left/right bottom;
 margin top/bottom & left/right;
 */
 
+.ex-container {
+  display: flex;
+  width: 100%;
+  height: 20rem;
+  background-color: grey;
+  padding: 2rem;
+}
+
+.item {
+  flex-grow: 1; /* Determines how much space something will take up after expanding the window*/
+  flex-shrink: 0;
+  flex-basis: 300px;
+}
+
+.item:nth-last-of-type(1) {
+  flex-shrink: 100;
+}
+
+.ex-container .item:nth-of-type(1) {
+  background-color: red;
+}
+
+.ex-container .item:nth-of-type(2) {
+  background-color: blue;
+}
+
+.ex-container .item:nth-of-type(3) {
+  background-color: green;
+}
+
 
 
 
