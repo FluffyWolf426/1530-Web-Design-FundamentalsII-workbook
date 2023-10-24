@@ -1,1 +1,100 @@
 /* developer styles go here */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.125rem; 
+    background-color: #08151f;
+}
+
+.inner-container {
+    max-width: 70rem;
+    margin: auto;
+}
+
+.sr-only {
+    position: absolute;
+    visibility: hidden;
+    top: -9999px;
+    left: -9999px;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* header */
+
+header {
+    background: rgb(48,82,111); /**fallback**/
+    background: linear-gradient(0deg, rgba(48,82,111,1)
+    0%,rgba(19,43,63,1));
+}
+
+.logo {
+    width: 4rem;
+    padding: 0.5rem;
+}
+
+ul.menu a {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1rem;
+    border-left: 0.25rem solid rgba(0,0,0,0);
+
+}
+
+ul.menu li a span {
+    display: none;
+}
+
+ul.menu  .dropdown a {
+
+    padding-left: 3rem;
+
+}
+
+/* hover state */
+
+ul.menu a:hover {
+    border-left: 0.25rem solid #f7d874;
+}
+
+/* larger menu */
+
+@media screen and (min-width:64rem){
+    /* utility class */
+    .flex-container {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    /* target only the first tier li's */
+
+    ul.menu > li {
+        padding-left: 3rem;
+        position: relative;
+    }
+
+    /* bring back dropdown arrows */
+
+    ul.menu li a span {
+        display: inline-block;
+        padding-left: 0.5rem;
+    }
+
+    /* shift your dropdown items back a bit */
+
+    ul.menu .dropdown a {
+        padding-left: 1rem;
+    }
+
+    /* before hiding the dropdown menus, style them first */
+
+    ul.dropdown {
+        background: #30526f;
+        position: absolute;
+    }
+}
