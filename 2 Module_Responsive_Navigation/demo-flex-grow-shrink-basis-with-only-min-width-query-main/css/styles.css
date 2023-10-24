@@ -100,8 +100,8 @@ section img {
 
 .inner-container {
   padding: 0 1rem;
-  display: flex;
-  flex-flow: wrap row;
+  /* display: flex;
+  flex-flow: wrap row; */
 }
 
 .col {
