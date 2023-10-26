@@ -10,7 +10,7 @@ body {
 h2 {
     flex-basis: 100%;
 }
- 
+
 .main-content {
     width: 65%;
     border: 1px solid #000;
@@ -34,7 +34,8 @@ img {
 aside {
     width: 33%;
     border: 1px solid #000;
-    border-radius: 5px;;
+    border-radius: 5px;
+    ;
     padding: 10px;
 }
 
@@ -52,16 +53,164 @@ aside {
 .container {
     max-width: 70rem;
     margin: 0 auto;
+    padding-left: 0.5rem;
 }
 
 header {
-    background: rgb(26,19,138);
-background: linear-gradient(90deg, rgba(26,19,138,1) 0%, rgba(135,39,130,1) 65%);
- }
+    background: rgb(26, 19, 138);
+    background: linear-gradient(90deg, rgba(26, 19, 138, 1) 0%, rgba(135, 39, 130, 1) 65%);
+}
 
- .flex-list {
+.flex-list {
     display: flex;
     flex-direction: column;
- }
+}
 
+svg {
+    width: 4rem;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    fill: #9537cb;
+}
 
+.flex-list a {
+    color: #B0E0E6;
+    text-transform: uppercase;
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+height: 100%;
+
+}
+
+ul.flex-list span {
+    display: none;
+
+}
+
+.dropdown a {
+    padding-left: 3rem;
+}
+
+.second-dropdown a {
+    margin-left: 3rem;
+}
+
+.flex-list a:hover {
+    border-left: 0.25rem solid #82007d;
+}
+
+.flex-list a:focus,
+.flex-list a:active,
+.sign-up a:focus,
+.sign-up a:hover {
+    background-color: #9537cb;
+}
+
+.sign-up a {
+    display: inline-block;
+    background-color: transparent;
+    border: 1px solid white;
+    color: #B0E0E6;
+    padding: 0.5rem 0.3rem;
+    text-decoration: none;
+   
+    border-radius: 0.3rem;
+}
+
+@media screen and (min-width: 750px) {
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        border-left: 0.25rem solid #82007d;
+    }
+
+    .flex-list {
+        flex-direction: row;
+
+    }
+
+    svg,
+    .sign-up {
+        margin: 0 3rem;
+    }
+
+    .flex-list li:nth-of-type(2),
+    .flex-list li:nth-of-type(3) {
+        position: relative;
+    }
+
+    .flex-list li:nth-of-type(2)>a:hover,
+    .flex-list li:nth-of-type(3)>a:hover {
+        background-color: blueviolet;
+         
+    }
+
+    ul.flex-list span {
+        display: inline-block;
+    }
+
+    .dropdown {
+        position: absolute;
+        left: 1rem;
+        visibility: hidden;
+    }
+
+    li:hover ul.dropdown, 
+    .flex-list a:hover, 
+    li:focus-within ul.dropdown,
+    li:hover .dropdown {
+        visibility: visible;
+        transition: all 0.3s ease;
+        background-color: blueviolet;
+
+    }
+
+    li:hover ul.dropdown,
+    .flex-list a:hover,
+    li:focus-within ul.dropdown,
+    li ul.dropdown a:focus {
+        border-left: unset;
+        color: aqua;
+    }
+
+    .dropdown,
+    .second-dropdown  {
+        background: #9537cb;
+        border-color: #B0E0E6;
+
+    }
+
+    .dropdown a {
+        border: 1px solid #B0E0E6;
+        padding-left: 0.5rem;
+        width: 9rem;
+    }
+
+    
+
+    .second-dropdown {
+        position: absolute;
+        top: 0;
+        right: -100px;
+        visibility: hidden;
+    }
+    .second-dropdown a {
+        width: 100%;
+        border: unset;
+        background: #9537cb;
+        border-color: #B0E0E6;
+    }
+
+     li:nth-of-type(3):hover .second-dropdown,
+     li:focus-within  .second-dropdown{
+        visibility: visible;
+        transition: all 0.3s ease;
+    }
+
+    
+
+}
