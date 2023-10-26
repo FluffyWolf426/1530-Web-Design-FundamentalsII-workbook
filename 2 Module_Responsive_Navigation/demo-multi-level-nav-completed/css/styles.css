@@ -114,4 +114,32 @@ ul.menu a:focus {
     ul.menu a:hover {
         color: #f7d874;
     }
+
+ /* ***************************************
+ 
+                My stuff
+ 
+ ********************************************/
+
+    .second-dropdown {
+        position: absolute;
+        visibility: hidden;
+        background: #30526f;
+        left: 3rem;
+        top:0;
+        left:220px
+    }
+
+   
+    .second-list   li:hover ul.second-dropdown
+    /** focus states - keyboard accessibility**/
+    .second-list  li:focus-within ul.second-dropdown,
+    .second-list  ul.second-dropdown a:focus{
+        visibility: visible;
+        transition: all 0.3s ease;
+    }
+
+    .second-dropdown {
+
+    }
 }
