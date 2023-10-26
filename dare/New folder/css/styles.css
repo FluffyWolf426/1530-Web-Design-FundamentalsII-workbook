@@ -38,9 +38,30 @@ aside {
     padding: 10px;
 }
 
-section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
+
+
+
+
+
+
+
+.hide {
+    display: none;
 }
+
+.container {
+    max-width: 70rem;
+    margin: 0 auto;
+}
+
+header {
+    background: rgb(26,19,138);
+background: linear-gradient(90deg, rgba(26,19,138,1) 0%, rgba(135,39,130,1) 65%);
+ }
+
+ .flex-list {
+    display: flex;
+    flex-direction: column;
+ }
+
+
