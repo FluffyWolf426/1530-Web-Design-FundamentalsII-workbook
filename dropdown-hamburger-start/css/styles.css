@@ -1,12 +1,32 @@
+@font-face {
+    font-family: 'milky_honeyregular';
+    src: url('milky_honey-webfont.woff2') format('woff2'),
+         url('milky_honey-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 :root {
     --navy: #0c263e;
     --dk-navy: #071629;
     --orange: #e75a2f;
     --dk-orange: #bc4123;
+    --honey-font: 'milky_honeyregular', cursive;
+    --roboto: 'Roboto', sans-serif;
 }
 
 /* Utility Classes */
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
+.inner-container {
+    margin: auto;
+    max-width: 40px;
+}
 
 /* Typography */
 
@@ -17,6 +37,23 @@ body {
     font-weight: 300;
 }
 
+a {
+    text-decoration: none;
+    /* color: #fff; */
+}
+
+ul, 
+li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+h1 a {
+    font-family: var(--honey-font);
+    font-weight: normal;
+}
+
 .btn {
     background: linear-gradient(270deg, rgba(231,90,47,1) 0%, rgba(188,65,35,1) 100%);
     box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
@@ -24,9 +61,67 @@ body {
 
 /* Header & Navigation */
 
+header {
+    background-color: var(--dk-navy);
+    padding: 1rem;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.toggle-btn {
+    outline: none;
+    border: none;
+    background: unset; /* or transparent*/
+    color: #fff;
+    text-transform: lowercase;
+    fill: #fff;
+}
+
+.toggle-btn:hover svg path,
+.toggle-btn:hover p{
+    color: var(--orange);
+    fill: var(--orange);
+}
+
 svg,
 header img {
     max-width: 2rem;
+}
+
+.first-link {
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+}
+
+.first-link img {
+    width: 1rem;
+    margin-left: 1rem;
+}
+
+/*hide the arrow icons*/
+.first-link img,
+a span {
+    display: none;
+}
+
+nav {
+    width: 100%;
+
+}
+
+nav li {
+    /* margin: 1rem 0; */
+
+    line-height: 2.5rem;
+}
+
+nav li a {
+    display:block;
+    padding: 0.5rem 1rem;
 }
 
 /* Main Styles */
